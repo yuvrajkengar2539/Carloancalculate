@@ -1,0 +1,55 @@
+<!<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      
+     <div class="calc">
+        <h2>Car Loan Calculator</h2>
+        
+        <form action="" method="" onsubmit="car_loan()" accept-charset="utf-8" class="p-3 m-3">
+          <label for="Car Ammount">Car Ammount:</label>
+          <input class="form-control mb-3" type="text" name="" placeholder="ex:-100000" id="Car_Ammount" value="" required/>
+          
+          <label for="Interst_Per_Annum">Rate of Interest (in %, per annum):</label>
+          <input class="form-control mb-3" type="text" name="" placeholder="ex:-9" id="Rate_Perannum" value="" required/>
+          
+          <label for="Loan_Years">Loan Years:</label>
+          <input class="form-control mb-3" type="text" name="" placeholder="ex:-4" id="Loan_Years" value="" required/>
+          
+          <button class="btn btn-primary" type="submit">Calculate</button>
+          </form>
+     </div>
+      
+      <div class="total p-3">
+       <table class="table table-stripped">
+  <thead>
+    <tr class="table-info">
+      <th scope="col">Loan Details</th>
+      <th scope="col">Cost (in Rupees)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monthly EMI</td>
+      <td id="monthly_emi"></td>
+    </tr>
+    <tr>
+      <td>Total Interest %</td>
+      <td id="total_interest"></td>
+    </tr>
+    <tr>
+      <td>Total Payment</td>
+      <td id="total_payment"></td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      
+      <script src="script.js"></script>
+  </body>
+</html>
